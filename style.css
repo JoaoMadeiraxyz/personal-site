@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+main {
+    background: url(leandra-rieger-viwRTe3wee8-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.sobre {
+    background: #23232e;
+    transform: scale(0.03);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.3s;
+    color: #c3c3cf;
+    overflow-y: auto;
+}
+
+.open-sobre {
+    visibility: visible;
+    transform: scale(1);
+}
+
+.closed-sobre {
+    transform: scale(0.03);
+    visibility: visible;
+}
+
+.minhaFoto {
+    padding: 25px;
+}
+
+.eu {
+    width: clamp(75px, 10%, 120px);
+    height: 25%;
+    float: left;
+    border: 2px solid #363644;
+    border-radius: 50%;
+}
+
+.sobre h1 {
+    color: #85858d;
+}
+
+.sobre pre {
+    white-space: pre-wrap;
+    padding: 25px;
+    font-size: clamp(10px, 15px, 18px);
+}
+
+i {
+    font-size: clamp(100%, 200%, 35px);
+    padding: 5px;
+}
+
+.sobreSpan {
+    position: flex;
+    width: 80%;
+    height: 85%;
+    text-align: center;
+}
